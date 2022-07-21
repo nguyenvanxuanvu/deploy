@@ -35,8 +35,9 @@ public class ParkingController {
                 new ResponseObject("OK", "OK", data)) ;
     }
 
-    @GetMapping("/")
-    String hello(){
+    @GetMapping("/hello")
+    @ResponseStatus(HttpStatus.OK)
+    public String hello(){
         return "hello";
     }
 
