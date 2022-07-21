@@ -35,5 +35,10 @@ public class ParkingController {
                 new ResponseObject("OK", "OK", data)) ;
     }
 
+    @GetMapping("/")
+    String hello(){
+        return "hello";
+    }
+
 
 }
